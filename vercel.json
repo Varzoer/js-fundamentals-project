@@ -8,8 +8,28 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "^/$",
+      "dest": "/project/public/index.html"
+    },
+    {
+      "src": "^/shop$",
+      "dest": "/project/public/shop.html"
+    },
+    {
+      "src": "^/admin$",
+      "dest": "/project/public/admin.html"
+    },
+    {
+      "src": "^/img/(.*)",
+      "dest": "/project/public/img/$1"
+    },
+    {
+      "src": "^/js/(.*)",
+      "dest": "/project/js/$1"
+    },
+    {
+      "src": "^/css/(.*)",
+      "dest": "/project/public/$1"
     }
   ]
 }
